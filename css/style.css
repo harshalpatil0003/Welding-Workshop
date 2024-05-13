@@ -10,17 +10,13 @@ body {margin:0;font-family:Arial}
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-.active {
-  background-color: goldenrod;
-  color: white;
-}
+
 
 .topnav .icon {
   display: none;
@@ -45,6 +41,12 @@ body {margin:0;font-family:Arial}
 }
 .social-links{
   font-size: 25px;
+}
+.pages{
+  color: goldenrod;
+}
+.pages:hover{
+  color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 600px) {
@@ -78,5 +80,14 @@ body {margin:0;font-family:Arial}
   }
   .footer{
   text-align: center;
+  align-items: center;
+
+  }
+  .map{
+    width: 90%;
+    align-items: center;
+    border:1px solid #1c1c1cee;
+    border-radius:10px;
+
   }
 }

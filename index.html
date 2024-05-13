@@ -59,15 +59,18 @@
         font-size: 50px;
       }
     }
+    .card{
+      margin:20px auto;
+    }
   </style>
 </head>
 
 <body>
 
   <div class="topnav" id="myTopnav">
-    <a href="./index.html" >Home</a>
-    <a href="./pages/about.html">About</a>
-    <a href="./pages/contact.html">Contact</a>
+    <a href="./index.html" class="pages">Home</a>
+    <a href="./pages/about.html" class="pages">About</a>
+    <a href="./pages/contact.html" class="pages">Contact</a>
 
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
@@ -80,12 +83,53 @@
     </div>
     <button class="btn btn-warning d-block mx-auto my-5"> Call Now</button>
   </div>
+
+  <script>
+    function myFunction() {
+      const x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  <div class="container d-flex flex-wrap">
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div><div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div><div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div><div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div><div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
   <footer class="footer mt-5 ">
     <div class="card " style="background-color: aliceblue;">
       <div class="d-flex justify-content-evenly flex-wrap p-3 foo">
 
         <div class="">
-          <h4 style="font-family: copperplate gothic light;font-size: 30px; color: goldenrod;">Trimurti <br/>Welding Services</h4>
+          <h4 style="font-family: copperplate gothic light;font-size: 30px; color: goldenrod;">Trimurti <br />Welding
+            Services</h4>
           <l style="color: rgb(0, 0, 0);">Let us plan you a
             perfect India Holiday<br>Custom-Crafted Tour Packages for Unforgettable<br> Holiday
             Experiences
@@ -98,15 +142,15 @@
           <a href="index.html">Home</a>
           <a href="./pages/about.html">About US</a>
           <a href="./pages/contact.html">Contact</a>
-        
+
         </div>
         <div>&emsp13;</div>
         <div class="fc d-flex flex-column my-2 ms-5  ">
-          <h4>Our Services</h4>
-          <a href="./pages/packages.html">Best Budget Packages</a>
-          <a href="./pages/blog.html">Informative Blogs</a>
-          <a href="./pages/medic.html">Medical Services</a>
-          <a href="./pages/accommodation.html">Accommodation</a>
+          <h4>Location</h4>
+          <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.2356926375924!2d74.8690032499526!3d20.513607567151634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdea9a31f68ea31%3A0x890dc8b213659ffb!2sTrimurtiWelding%20workshops%20and%20Telars!5e0!3m2!1sen!2sin!4v1715577674704!5m2!1sen!2sin"
+            width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div>&emsp13;</div>
@@ -131,16 +175,7 @@
     </div>
   </footer>
 
-  <script>
-    function myFunction() {
-      const x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
+
 
 </body>
 
