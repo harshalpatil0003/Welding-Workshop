@@ -4,7 +4,9 @@ body {margin:0;font-family:Arial}
   overflow: hidden;
   background-color: #1c1c1cee;
 }
-
+.card h4{
+  color: goldenrod;
+}
 .topnav a {
   float: left;
   display: block;
@@ -24,7 +26,26 @@ body {margin:0;font-family:Arial}
   display: none;
 }
 
-
+.footer{
+  color: black;
+  font-size: 20px;
+  
+}
+.card-footer{
+  font-size: 15px;
+}
+.d-flex a{
+  text-decoration: none;
+  color: black;
+}
+.fc a:hover {
+  margin-left: -10px;
+  color: goldenrod;
+  transition: 0.5s;
+}
+.social-links{
+  font-size: 25px;
+}
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
@@ -54,5 +75,8 @@ body {margin:0;font-family:Arial}
     display: block;
     width: 100%;
     text-align: left;
+  }
+  .footer{
+  text-align: center;
   }
 }
