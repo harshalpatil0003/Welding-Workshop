@@ -1,13 +1,17 @@
 body {margin:0;font-family:Arial}
 
-.topnav {
+header.topnav {
   overflow: hidden;
-  background-color: #1c1c1cee;
+  background-color: #1c1c1c00;
+  color: goldenrod;
+}
+header.topnav.pages{
+  color: goldenrod;
 }
 .card h4{
   color: goldenrod;
 }
-.topnav a {
+header.topnav a {
   float: left;
   display: block;
   text-align: center;
@@ -18,7 +22,7 @@ body {margin:0;font-family:Arial}
 
 
 
-.topnav .icon {
+header.topnav .icon {
   display: none;
 }
 
@@ -42,9 +46,7 @@ body {margin:0;font-family:Arial}
 .social-links{
   font-size: 25px;
 }
-.pages{
-  color: goldenrod;
-}
+
 .pages:hover{
   color: rgb(255, 255, 255);
 }
@@ -60,8 +62,8 @@ body {margin:0;font-family:Arial}
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
+  header.topnav .topnav.responsive {position: relative;}
+  header.topnav .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -71,9 +73,9 @@ body {margin:0;font-family:Arial}
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
+  header.topnav.responsive .dropdown {float: none;}
+  header.topnav.responsive .dropdown-content {position: relative;}
+  header.topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
     text-align: left;

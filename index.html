@@ -68,18 +68,28 @@
       height: 50px;
       width: 50px;
     }
+
+    .phone {
+      text-decoration: none;
+      color: black;
+    }
   </style>
 </head>
 
 <body>
+  <header class="d-flex justify-content-between">
+    <div class="logo">
+      <img src="./imgs/logo.png" alt="">
+    </div>
 
-  <div class="topnav" id="myTopnav">
-    <a href="./index.html" class="pages">Home</a>
-    <a href="./pages/about.html" class="pages">About</a>
-    <a href="./pages/contact.html" class="pages">Contact</a>
+    <div class="topnav" id="myTopnav">
+      <a href="./index.html" class="pages">Home</a>
+      <a href="./pages/about.html" class="pages">About</a>
+      <a href="./pages/contact.html" class="pages">Contact</a>
 
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  </header>
 
   <div class="header-section ">
     <div>
@@ -87,7 +97,7 @@
       <p class="heading">Welding Services</p>
       <p class="subheading">Metal & Stainless Steel Work</p>
     </div>
-    <button class="btn btn-warning d-block mx-auto my-5"> Call Now</button>
+    <button class="btn btn-warning d-block mx-auto my-5"> <a href="tel:9284639013" class="phone"> Call Now</a></button>
   </div>
 
   <script>
@@ -99,15 +109,16 @@
         x.className = "topnav";
       }
     }
-    function change(Name) {
-      const mainImg = document.getElementById('Product');
-      mainImg.src = Name;
-
-    }
   </script>
 
   <div class="container d-flex flex-wrap">
+    <script>
+      function change(Name) {
+        const mainImg = document.getElementById('Product');
+        mainImg.src = Name;
 
+      }
+    </script>
     <div class="card" style="width: 18rem;">
       <div>
         <div class="product">
@@ -115,7 +126,8 @@
         </div>
 
         <div class="d-flex product-Images-Container ">
-          <img src="./imgs/products/bullock cart.jpeg" class="card-img-top" onclick="change('./imgs/products/bullock cart.jpeg')" />
+          <img src="./imgs/products/bullock cart.jpeg" class="card-img-top"
+            onclick="change('./imgs/products/bullock cart.jpeg')" />
           <img src="./imgs/products/bc2.JPG" class="card-img-top" onclick="change('./imgs/products/bc2.JPG')" />
           <img src="./imgs/products/bc3.jpeg" class="card-img-top" onclick="change('./imgs/products/bc3.jpeg')" />
 
@@ -129,82 +141,212 @@
       </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="card" style="width: 18rem;">
-      <img src="./imgs/products/farm2.jpg" class="card-img-top" alt="farm-products">
+      <script>
+        function changes(Name) {
+          const mainImg = document.getElementById('Products');
+          mainImg.src = Name;
+
+        }
+      </script>
+      <div>
+        <div class="product">
+          <img src="./imgs/products/buggy3.jpg" id="Products" class="card-img-top" alt="cart" />
+        </div>
+
+        <div class="d-flex product-Images-Container ">
+          <img src="./imgs/products/buggy3.jpg" class="card-img-top" onclick="changes('./imgs/products/buggy3.jpg')" />
+          <img src="./imgs/products/bc2.JPG" class="card-img-top" onclick="changes('./imgs/products/bc2.JPG')" />
+          <img src="./imgs/products/bc3.jpeg" class="card-img-top" onclick="changes('./imgs/products/bc3.jpeg')" />
+
+        </div>
+
+      </div>
+
       <div class="card-body">
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
           content.</p>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
-      <img src="./imgs/products/buggy3.jpg" class="card-img-top" alt="...">
+      <script>
+        function changed(Name) {
+          const mainImg = document.getElementById('Producted');
+          mainImg.src = Name;
+
+        }
+      </script>
+      <div>
+        <div class="product">
+          <img src="./imgs/products/bullock cart.jpeg" id="Producted" class="card-img-top" alt="cart" />
+        </div>
+
+        <div class="d-flex product-Images-Container ">
+          <img src="./imgs/products/bullock cart.jpeg" class="card-img-top"
+            onclick="changed('./imgs/products/bullock cart.jpeg')" />
+          <img src="./imgs/products/bc2.JPG" class="card-img-top" onclick="changed('./imgs/products/bc2.JPG')" />
+          <img src="./imgs/products/bc3.jpeg" class="card-img-top" onclick="changed('./imgs/products/bc3.jpeg')" />
+
+        </div>
+
+      </div>
+
       <div class="card-body">
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
           content.</p>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
-      <img src="./imgs/products/band1.avif" class="card-img-top" alt="...">
+      <script>
+        function changing(Name) {
+          const mainImg = document.getElementById('Pro');
+          mainImg.src = Name;
+
+        }
+      </script>
+      <div>
+        <div class="product">
+          <img src="./imgs/products/bullock cart.jpeg" id="Pro" class="card-img-top" alt="cart" />
+        </div>
+
+        <div class="d-flex product-Images-Container ">
+          <img src="./imgs/products/bullock cart.jpeg" class="card-img-top"
+            onclick="changing('./imgs/products/bullock cart.jpeg')" />
+          <img src="./imgs/products/bc2.JPG" class="card-img-top" onclick="changing('./imgs/products/bc2.JPG')" />
+          <img src="./imgs/products/bc3.jpeg" class="card-img-top" onclick="changing('./imgs/products/bc3.jpeg')" />
+
+        </div>
+
+      </div>
+
       <div class="card-body">
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
           content.</p>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
-      <img src="./imgs/products/gate2.jpg" class="card-img-top" alt="...">
+      <script>
+        function changee(Name) {
+          const mainImg = document.getElementById('Produ');
+          mainImg.src = Name;
+
+        }
+      </script>
+      <div>
+        <div class="product">
+          <img src="./imgs/products/bullock cart.jpeg" id="Produ" class="card-img-top" alt="cart" />
+        </div>
+
+        <div class="d-flex product-Images-Container ">
+          <img src="./imgs/products/bullock cart.jpeg" class="card-img-top"
+            onclick="changee('./imgs/products/bullock cart.jpeg')" />
+          <img src="./imgs/products/bc2.JPG" class="card-img-top" onclick="changee('./imgs/products/bc2.JPG')" />
+          <img src="./imgs/products/bc3.jpeg" class="card-img-top" onclick="changee('./imgs/products/bc3.jpeg')" />
+
+        </div>
+
+      </div>
+
       <div class="card-body">
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
           content.</p>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
-      <img src="./imgs/products/shade1.jpg" class="card-img-top" alt="cart">
+      <script>
+        function chang(Name) {
+          const mainImg = document.getElementById('Producing');
+          mainImg.src = Name;
+
+        }
+      </script>
+      <div>
+        <div class="product">
+          <img src="./imgs/products/bullock cart.jpeg" id="Producing" class="card-img-top" alt="cart" />
+        </div>
+
+        <div class="d-flex product-Images-Container ">
+          <img src="./imgs/products/bullock cart.jpeg" class="card-img-top"
+            onclick="chang('./imgs/products/bullock cart.jpeg')" />
+          <img src="./imgs/products/bc2.JPG" class="card-img-top" onclick="chang('./imgs/products/bc2.JPG')" />
+          <img src="./imgs/products/bc3.jpeg" class="card-img-top" onclick="chang('./imgs/products/bc3.jpeg')" />
+
+        </div>
+
+      </div>
+
       <div class="card-body">
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
           content.</p>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
-      <img src="./imgs/products/bullock cart.jpeg" class="card-img-top" alt="cart">
+      <script>
+        function chan(Name) {
+          const mainImg = document.getElementById('Pr');
+          mainImg.src = Name;
+
+        }
+      </script>
+      <div>
+        <div class="product">
+          <img src="./imgs/products/bullock cart.jpeg" id="Pr" class="card-img-top" alt="cart" />
+        </div>
+
+        <div class="d-flex product-Images-Container ">
+          <img src="./imgs/products/bullock cart.jpeg" class="card-img-top"
+            onclick="chan('./imgs/products/bullock cart.jpeg')" />
+          <img src="./imgs/products/bc2.JPG" class="card-img-top" onclick="chan('./imgs/products/bc2.JPG')" />
+          <img src="./imgs/products/bc3.jpeg" class="card-img-top" onclick="chan('./imgs/products/bc3.jpeg')" />
+
+        </div>
+
+      </div>
+
       <div class="card-body">
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
           content.</p>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
-      <img src="./imgs/products/bullock cart.jpeg" class="card-img-top" alt="cart">
+      <script>
+        function chance(Name) {
+          const mainImg = document.getElementById('P');
+          mainImg.src = Name;
+
+        }
+      </script>
+      <div>
+        <div class="product">
+          <img src="./imgs/products/bullock cart.jpeg" id="P" class="card-img-top" alt="cart" />
+        </div>
+
+        <div class="d-flex product-Images-Container ">
+          <img src="./imgs/products/bullock cart.jpeg" class="card-img-top"
+            onclick="chance('./imgs/products/bullock cart.jpeg')" />
+          <img src="./imgs/products/bc2.JPG" class="card-img-top" onclick="chance('./imgs/products/bc2.JPG')" />
+          <img src="./imgs/products/bc3.jpeg" class="card-img-top" onclick="chance('./imgs/products/bc3.jpeg')" />
+
+        </div>
+
+      </div>
+
       <div class="card-body">
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
           content.</p>
       </div>
     </div>
   </div>
-  <footer class="footer mt-5 ">
+
+  <footer class="footer mt-5 mb-0">
     <div class="card " style="background-color: aliceblue;">
       <div class="d-flex justify-content-evenly flex-wrap p-3 foo">
 
         <div class="">
           <h4 style="font-family: copperplate gothic light;font-size: 30px; color: goldenrod;">Trimurti <br />Welding
             Services</h4>
-          <l style="color: rgb(0, 0, 0);">Let us plan you a
-            perfect India Holiday<br>Custom-Crafted Tour Packages for Unforgettable<br> Holiday
-            Experiences
-            in India.
+          <l style="color: rgb(0, 0, 0);">Let us plan your dreams<br />
+            Things that matters to you.
 
         </div>
         <div>&emsp13;</div>
@@ -229,7 +371,7 @@
           <h4>follow us</h4>
           <a href="http://youtube.com/@roadtocode4u" class=""><i class="fa-brands fa-youtube"
               alt="youtube-icon"></i></a>
-          <a href="https://github.com/harshalpatil0003/tourism-website-icp7" class=""><i class="fa-brands fa-github"
+          <a href="https://github.com/harshalpatil0003" class=""><i class="fa-brands fa-github"
               alt="github-icon"></i></a>
           <a href="http://instagram.com/roadtocode4u" class=""><i class="fa-brands fa-instagram"
               alt="instagram-icon"></i></a>
