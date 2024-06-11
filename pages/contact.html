@@ -11,24 +11,37 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: rgb(12, 12, 12);
+      color: #fff;
+    }
+
+    .form-control {
+      width: 50%;
+    }
+
+    form {
+      padding: 30px;
+      width: 90%;
+    }
+  </style>
 
 </head>
 
 <body>
-  
+
   <header class="d-flex justify-content-between">
-    <div class="logo">
-      <img src="../imgs/logo.png" alt="">
+
+    <div class="topnav ms-5" id="myTopnav">
+      <a href="../index.html" class="pages">Home</a>
+      <a href="./about.html" class="pages">About</a>
+      <a href="./contact.html" class="pages">Contact</a>
+
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-  <div class="topnav" id="myTopnav">
-    <a href="../index.html" class="pages">Home</a>
-    <a href="./about.html" class="pages">About</a>
-    <a href="./contact.html" class="pages">Contact</a>
 
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
-
-</header>
+  </header>
 
   <script>
     function myFunction() {
@@ -40,14 +53,54 @@
       }
     }
   </script>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
+
+  <section>
+    <form class="row g-3">
+      <div class="col-md-12">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="xyz@gmail.com">
+      </div>
+      <div class="col-md-12">
+        <label for="inputPassword4" class="form-label">Confirm Email</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="xyz@gmail.com">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+
+
+        <textarea class="form-control" name="inputAddress" id="inputAddress" rows="3" placeholder="address"></textarea>
+      </div>
+
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-warning">Submit</button>
+      </div>
+    </form>
+  </section>
 </body>
 <footer class="footer mt-5 mb-0">
   <div class="card " style="background-color: aliceblue;">
@@ -56,7 +109,7 @@
       <div class="">
         <h4 style="font-family: copperplate gothic light;font-size: 30px; color: goldenrod;">Trimurti <br />Welding
           Services</h4>
-        <l style="color: rgb(0, 0, 0);">Let us plan your dreams<br/>
+        <l style="color: rgb(0, 0, 0);">Let us plan your dreams,<br />
           Things that matters to you.
 
       </div>
@@ -80,10 +133,8 @@
       <div>&emsp13;</div>
       <div class="  social-links flex-column my-2  ">
         <h4>follow us</h4>
-        <a href="http://youtube.com/@roadtocode4u" class=""><i class="fa-brands fa-youtube"
-            alt="youtube-icon"></i></a>
-        <a href="https://github.com/harshalpatil0003" class=""><i class="fa-brands fa-github"
-            alt="github-icon"></i></a>
+        <a href="http://youtube.com/@roadtocode4u" class=""><i class="fa-brands fa-youtube" alt="youtube-icon"></i></a>
+        <a href="https://github.com/harshalpatil0003" class=""><i class="fa-brands fa-github" alt="github-icon"></i></a>
         <a href="http://instagram.com/roadtocode4u" class=""><i class="fa-brands fa-instagram"
             alt="instagram-icon"></i></a>
         <a href="https://www.linkedin.com/in/bhakti-shinde-76bb4726a/" class=""><i class="fa-brands fa-linkedin-in"
@@ -98,4 +149,5 @@
     </div>
   </div>
 </footer>
+
 </html>

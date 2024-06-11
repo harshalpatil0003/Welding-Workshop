@@ -3,10 +3,14 @@ body {margin:0;font-family:Arial}
 header.topnav {
   overflow: hidden;
   background-color: #1c1c1c00;
-  color: goldenrod;
+  
 }
-header.topnav.pages{
+.topnav a{
+  margin-right: 25px;
+}
+header .topnav .pages{
   color: goldenrod;
+  font-size: 25px;
 }
 .card h4{
   color: goldenrod;
@@ -47,7 +51,7 @@ header.topnav .icon {
   font-size: 25px;
 }
 
-.pages:hover{
+header .topnav .pages:hover{
   color: rgb(255, 255, 255);
 }
 
@@ -91,5 +95,12 @@ header.topnav .icon {
     border:1px solid #1c1c1cee;
     border-radius:10px;
 
+  }
+
+
+}
+@media screen and (min-width: 600px) {
+  .icon{
+    display: none;
   }
 }
