@@ -1,20 +1,27 @@
-body {margin:0;font-family:Arial}
+body {
+  margin: 0;
+  font-family: Arial
+}
 
 header.topnav {
   overflow: hidden;
   background-color: #1c1c1c00;
-  
+
 }
-.topnav a{
+
+.topnav a {
   margin-right: 25px;
 }
-header .topnav .pages{
+
+header .topnav .pages {
   color: goldenrod;
   font-size: 25px;
 }
-.card h4{
+
+.card h4 {
   color: goldenrod;
 }
+
 header.topnav a {
   float: left;
   display: block;
@@ -24,41 +31,50 @@ header.topnav a {
   font-size: 17px;
 }
 
-
+.card-img-top{
+ object-fit: cover;
+}
 
 header.topnav .icon {
   display: none;
 }
 
-.footer{
+.footer {
   color: black;
   font-size: 20px;
-  
+
 }
-.card-footer{
+
+.card-footer {
   font-size: 15px;
 }
-.d-flex a{
+
+.d-flex a {
   text-decoration: none;
   color: black;
 }
+
 .fc a:hover {
   margin-left: -10px;
   color: goldenrod;
   transition: 0.5s;
 }
-.social-links{
+
+.social-links {
   font-size: 25px;
 }
 
-header .topnav .pages:hover{
+header .topnav .pages:hover {
   color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
     display: none;
   }
+
   .topnav a.icon {
     float: right;
     display: block;
@@ -66,41 +82,70 @@ header .topnav .pages:hover{
 }
 
 @media screen and (max-width: 600px) {
-  header.topnav .topnav.responsive {position: relative;}
+  header.topnav .topnav.responsive {
+    position: relative;
+  }
+
   header.topnav .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
-  header.topnav.responsive .dropdown {float: none;}
-  header.topnav.responsive .dropdown-content {position: relative;}
+
+  header.topnav.responsive .dropdown {
+    float: none;
+  }
+
+  header.topnav.responsive .dropdown-content {
+    position: relative;
+  }
+
   header.topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
     text-align: left;
   }
-  .footer{
-  text-align: center;
-  align-items: center;
+
+  .footer {
+    text-align: center;
+    align-items: center;
 
   }
-  .map{
+
+  .map {
     width: 90%;
     align-items: center;
-    border:1px solid #1c1c1cee;
-    border-radius:10px;
+    border: 1px solid #1c1c1cee;
+    border-radius: 10px;
 
+  }
+
+  section form {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .container a{
+    
+    font-size: 10px;
+    display: block;
+    flex-wrap: wrap;
+  }
+  strong{
+    font-size: 20px;
   }
 
 
 }
+
 @media screen and (min-width: 600px) {
-  .icon{
+  .icon {
     display: none;
   }
 }

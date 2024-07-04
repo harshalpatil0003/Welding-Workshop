@@ -11,19 +11,48 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
   <style>
     body {
       background-color: rgb(12, 12, 12);
       color: #fff;
+
     }
 
     .form-control {
-      width: 50%;
+      background-color: #ffffff79;
     }
 
+strong{
+  font-weight:900;
+  font-size: 20px;
+}
     form {
+      color: goldenrod;
+
+      display: block;
+      /* background-image: url(../imgs/welder_contact.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; */
       padding: 30px;
-      width: 90%;
+      border-radius: 20px;
+
+      width: 800px;
+    }
+
+    .fa-solid {
+      width: 800px;
+      font-size: 30px;
+    }
+.container a{
+  color: #ffd336;
+}
+    form:hover {
+      box-shadow: 0 0 10px 1px #ffd336;
+      transform: scale(1.010);
+      transition: 1s;
     }
   </style>
 
@@ -54,17 +83,17 @@
     }
   </script>
 
-  <section>
-    <form class="row g-3">
-      <div class="col-md-12">
+  <section class="p-5 ">
+    <form class="row g-3 mx-auto ">
+      <div class="col-md-6">
         <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="xyz@gmail.com">
+        <input type="email" class="form-control" id="inputEmail1" placeholder="xyz@gmail.com">
       </div>
-      <div class="col-md-12">
-        <label for="inputPassword4" class="form-label">Confirm Email</label>
-        <input type="password" class="form-control" id="inputPassword4" placeholder="xyz@gmail.com">
+      <div class="col-md-6">
+        <label for="inputEmail2" class="form-label">Confirm Email</label>
+        <input type="email" class="form-control" id="inputEmail2" placeholder="xyz@gmail.com">
       </div>
-      <div class="col-12">
+      <div class="col-6">
         <label for="inputAddress" class="form-label">Address</label>
 
 
@@ -77,18 +106,18 @@
         <label for="inputCity" class="form-label">City</label>
         <input type="text" class="form-control" id="inputCity">
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
         <label for="inputState" class="form-label">State</label>
-        <select id="inputState" class="form-select">
+        <select id="inputState" class="form-select form-control">
           <option selected>Choose...</option>
           <option>...</option>
         </select>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-6">
         <label for="inputZip" class="form-label">Zip</label>
         <input type="text" class="form-control" id="inputZip">
       </div>
-      <div class="col-12">
+      <div class="col-6">
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="gridCheck">
           <label class="form-check-label" for="gridCheck">
@@ -97,11 +126,78 @@
         </div>
       </div>
       <div class="col-12">
-        <button type="submit" class="btn btn-warning">Submit</button>
+        <button type="submit" class="btn btn-warning" onclick="validation()">Submit</button>
       </div>
     </form>
   </section>
+
+
+
+
+  <div class="container d-flex flex-wrap mx-auto justify-content-evenly p-4 ">
+    <a href=https://maps.app.goo.gl/rUoSC6S7X4UtsiuM7 class="links">
+      <i class="fa-solid fa-location-dot" alt="location-icon" id="location"></i>
+      <strong>Location:</strong>
+      <p>1288/567, Takali P.D,<br> Chalisgaon, Jalgaon, <br>Maharashtra 424101.</p>
+    </a>
+    <a href="mailto:journeyjet@gmail.com" class="links ">
+      <i class="fa-solid fa-envelope" alt="email-icon" id="email"></i>
+      <strong>Email:</strong>
+      <p>trimurtiweldings05@gmail.com</p>
+    </a>
+    <a href="tel:+91 9284639013" class="links">
+      <i class="fa-solid fa-phone" alt="phone-icon" id="call"></i>
+      <strong>Call:</strong>
+      <p>+91 9284639013</p>
+    </a>
+  </div>
 </body>
+<script>
+  function validation() {
+    const var1 = document.getElementById("inputEmail1")
+    const var2 = document.getElementById("inputEmail2")
+    const var3 = document.getElementById("inputCity")
+    const var4 = document.getElementById("inputAddress")
+    const var5 = document.getElementById("inputState")
+    const var6 = document.getElementById("inputZip")
+    const var7 = document.getElementById("gridCheck")
+
+    if (var1.value == "") {
+      alert("Enter Email")
+    }
+
+    else if (var1.value != var2.value) {
+      alert("Email Doesn't Matched")
+    }
+    else if (var3.value == "") {
+      alert("Enter City")
+    }
+    else if (var4.value == "") {
+      alert("Enter Address")
+    }
+    else if (var5.value == "") {
+      alert("Enter State")
+    }
+    else if (var6.value == "") {
+      alert("Enter Zip Code")
+    }
+    // else if(var6.length!="6"){
+    //   alert("Invalid Zipcode")
+    // }
+    else if (var7.value == "") {
+      alert("Check The Box")
+    }
+    else {
+      alert(`WEL COME 🙏 ${var1.value}`)
+    }
+
+
+
+  }
+</script>
+
+
+
 <footer class="footer mt-5 mb-0">
   <div class="card " style="background-color: aliceblue;">
     <div class="d-flex justify-content-evenly flex-wrap p-3 foo">
