@@ -2,7 +2,11 @@ body {
   margin: 0;
   font-family: Arial
 }
-
+.icon{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
 header.topnav {
   overflow: hidden;
   background-color: #1c1c1c00;
@@ -15,7 +19,7 @@ header.topnav {
 
 header .topnav .pages {
   color: goldenrod;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .card h4 {
@@ -95,7 +99,7 @@ header .topnav .pages:hover {
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
   }
 
   header.topnav.responsive .dropdown {
@@ -107,9 +111,9 @@ header .topnav .pages:hover {
   }
 
   header.topnav.responsive .dropdown .dropbtn {
-    display: block;
+    /* display: block;
     width: 100%;
-    text-align: left;
+    text-align: left; */
   }
 
   .footer {

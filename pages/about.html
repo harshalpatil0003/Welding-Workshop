@@ -11,28 +11,150 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-<style>
-  body{
-    /* background-image: url(../imgs/welder_contact.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%; */
-    background-color: rgb(12, 12, 12);
-  }
-</style>
+  <style>
+    body {
+
+      background-color: rgb(12, 12, 12);
+
+    }
+
+    .container {}
+
+    .about-header {
+      text-transform: uppercase;
+      color: goldenrod;
+      font-size: 60px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-top: 50px;
+      margin-left: 60px;
+    }
+
+    h2 {
+      font-size: 40px;
+      color: #fff;
+      margin-left: 150px;
+      margin-top: -20px;
+    }
+
+    .line1 {
+      color: #fff;
+    }
+
+    .line2 {
+      color: #fff;
+    }
+
+    .description-container {
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 20px;
+      width: 700px;
+      margin: 30px 0;
+      margin-left: 260px;
+    }
+
+    .imgs-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 30px 0;
+      margin-left: 260px;
+      gap: 10px;
+
+    }
+
+    .img {
+      height: 165px;
+      width: 165px;
+      border-radius: 10px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .note {
+      margin: 30px 0;
+      margin-left: 260px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    @media screen and (max-width: 600px) {
+      .about-header {
+        font-size: 45px;
+        margin-left: 30px;
+      }
+
+      h2 {
+        font-size: 25px;
+        margin-top: -25px;
+        margin-left: 40px;
+      }
+
+      .container {
+        margin: 0px auto;
+      }
+
+      .description-container {
+        margin: 20px auto;
+        font-size: 15px;
+        width: 90%;
+
+
+      }
+
+      .line1 {
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .line2 {
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .imgs-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        margin: 0 auto;
+padding: 0 10px;
+        justify-content: space-evenly;
+      }
+
+      .img {
+
+        height: 120px;
+        width: 120px;
+        border-radius: 10px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+      .note {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+      color: #fff;
+      font-size: 15px;
+      padding: 0 10px;
+      font-weight: 500;
+    }
+    }
+  </style>
 </head>
 
 <body>
   <header class="d-flex justify-content-between">
-  
-  <div class="topnav ms-5" id="myTopnav">
-    <a href="../index.html" class="pages">Home</a>
-    <a href="./about.html" class="pages">About</a>
-    <a href="./contact.html" class="pages">Contact</a>
 
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
-</header>
+    <div class="topnav ms-5" id="myTopnav">
+      <a href="./about.html" class="pages">About</a>
+      <a href="../index.html" class="pages">Home</a>
+      <a href="./contact.html" class="pages">Contact</a>
+
+      <a href="javascript:void(0);" style="font-size:20px; color: gold;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  </header>
 
 
   <script>
@@ -47,6 +169,22 @@
   </script>
 
 </body>
+<div class="container  ">
+  <h1 class="about-header">Trimurti </h1>;
+  <h2>Welding Workshop</h2>
+</div>
+<div class="description-container border border-white ">
+  <p class="line1">Authorized dealer <span style="color: goldenrod; text-transform: uppercase; font-weight: 500;">sairaj
+      agro Agricultural products</span></p>
+  <p class="line2">Quality products-Government subsidiary manufacturers of Agricultural tools</p>
+</div>
+<div class="imgs-row">
+  <img src="../imgs/products/bullock cart.jpeg" class="img" alt="">
+  <img src="../imgs/products/farm2.jpg" class="img" alt="">
+  <img src="../imgs/products/farm3.jpg" class="img" alt="">
+  <img src="../imgs/products/band2.jpg" class="img" alt="">
+</div>
+<p class="note">We have all types of farm implements repaired and refurnished</p>
 <footer class="footer mt-5 mb-0">
   <div class="card " style="background-color: aliceblue;">
     <div class="d-flex justify-content-evenly flex-wrap p-3 foo">
@@ -71,17 +209,15 @@
         <h4>Location</h4>
         <iframe class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.2356926375924!2d74.8690032499526!3d20.513607567151634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdea9a31f68ea31%3A0x890dc8b213659ffb!2sTrimurtiWelding%20workshops%20and%20Telars!5e0!3m2!1sen!2sin!4v1715577674704!5m2!1sen!2sin"
-          width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+          width="400" height="250" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       <div>&emsp13;</div>
       <div class="  social-links flex-column my-2  ">
         <h4>follow us</h4>
-        <a href="http://youtube.com/@roadtocode4u" class=""><i class="fa-brands fa-youtube"
-            alt="youtube-icon"></i></a>
-        <a href="https://github.com/harshalpatil0003" class=""><i class="fa-brands fa-github"
-            alt="github-icon"></i></a>
+        <a href="http://youtube.com/@roadtocode4u" class=""><i class="fa-brands fa-youtube" alt="youtube-icon"></i></a>
+        <a href="https://github.com/harshalpatil0003" class=""><i class="fa-brands fa-github" alt="github-icon"></i></a>
         <a href="http://instagram.com/roadtocode4u" class=""><i class="fa-brands fa-instagram"
             alt="instagram-icon"></i></a>
         <a href="https://www.linkedin.com/in/bhakti-shinde-76bb4726a/" class=""><i class="fa-brands fa-linkedin-in"
@@ -96,4 +232,5 @@
     </div>
   </div>
 </footer>
+
 </html>
